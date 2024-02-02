@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <ul>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-1', 'montant': 290}) }}">
+                Test sur le DAB 1 avec un retrait de 290 €
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-1', 'montant': 2500}) }}">
+                Test sur le DAB 1 avec un retrait de 2 500 €
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-1', 'montant': 5250}) }}">
+                Test sur le DAB 1 avec un retrait de 5 250 €
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-2', 'montant': 560}) }}">
+                Test sur le DAB 2 avec un retrait de 560 €
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-2', 'montant': 890}) }}">
+                Test sur le DAB 2 avec un retrait de 890 €
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_index_index', {'dab': 'dab-3', 'montant': 2250}) }}">
+                Test sur le DAB 3 avec un retrait de 2 250 €
+            </a>
+        </li>
+    </ul>
+
+     {% if retrait is defined %}
+         <div>Billets (Résultat) =</div>
+         {% for billet in retrait.billets %}
+             <div>{{ billet.quantite }} billet(s) de {{ billet.montantUnitaire }} €</div>
+         {% endfor %}
+     {% endif %}
+{% endblock %}

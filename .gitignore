@@ -1,0 +1,41 @@
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.bak
+/.env.local.php
+/.env.*.local
+/public/bundles/
+/var/
+/vendor/
+/.idea/
+/.history/
+###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+/sql
+/semantic
+/log
+.history/
+config/config_admin.yaml
+/public/ged/
+/public/files/
+/public/temp/
+/public/upload/
+/xlsx/*.xlsx
+/xlsx_iveco/*.xlsx
+/xlsx_client/*.xlsx
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+.php-cs-fixer.*
+/src/Service/DabService.php
