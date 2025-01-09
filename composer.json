@@ -72,7 +72,7 @@
         }
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^*",
+        "doctrine/doctrine-fixtures-bundle": "*",
         "phpunit/phpunit": "*",
         "symfony/debug-bundle": "*",
         "symfony/maker-bundle": "*",
